@@ -5,9 +5,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "node --watch src/server.js",
     "start": "node src/server.js",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest --runInBand",
+    "dev": "node --watch src/server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand",
     "test:win": "set NODE_OPTIONS=--experimental-vm-modules&& jest --runInBand"
   },
   "keywords": [
